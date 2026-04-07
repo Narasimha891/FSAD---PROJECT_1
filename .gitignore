@@ -1,0 +1,21 @@
+# Frontend
+career-guidance/node_modules/
+career-guidance/dist/
+
+# Backend
+s5-springboot-career_guidence/target/
+s5-springboot-career_guidence/.settings/
+s5-springboot-career_guidence/.classpath
+s5-springboot-career_guidence/.factorypath
+s5-springboot-career_guidence/.project
+s5-springboot-career_guidence/logs/
+s5-springboot-career_guidence/uploads/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
