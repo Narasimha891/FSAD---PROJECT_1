@@ -10,10 +10,16 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOriginPatterns("http://localhost:*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedOriginPatterns(
+                    "http://localhost:*",       // local dev
+                    "https://*.onrender.com",   // Render deployments
+                    "https://*.vercel.app",     // Vercel frontend (if applicable)
+                    "*"                         // open for testing – restrict before production
+                )
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*")
-                .allowCredentials(true)
+                .exposedHeaders("Authorization")
+                .allowCredentials(false)        // must be false when origin is "*"
                 .maxAge(3600);
     }
 }
