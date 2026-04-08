@@ -2,38 +2,50 @@ package com.klu.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import java.util.Arrays;
+import org.springframework.web.cors.CorsConfigurationSource;
 
-/**
- * Security configuration for Render deployment.
- *
- * All API endpoints are open (permitAll) for testing / initial deployment.
- * JWT filter is intentionally NOT added here so no request is blocked.
- * CSRF is disabled (stateless REST API).
- * Role restrictions are removed until authentication is properly wired.
- */
+import java.util.List;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .cors(Customizer.withDefaults())
+            // Disable CSRF for stateless APIs
             .csrf(csrf -> csrf.disable())
-            .sessionManagement(session ->
-                session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .authorizeHttpRequests(auth ->
-                auth.anyRequest().permitAll()
+
+            // Enable CORS with our custom configuration source
+            .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+
+            // Set session management to stateless
+            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+
+            // Disable default login/logout behaviors
+            .formLogin(form -> form.disable())
+            .httpBasic(basic -> basic.disable())
+
+            // Configure request authorization
+            .authorizeHttpRequests(auth -> auth
+                // Allow all OPTIONS pre-flight requests
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                
+                // Public authentication endpoints
+                .requestMatchers("/api/auth/**").permitAll()
+                
+                // All other API endpoints (currently open for testing)
+                .requestMatchers("/api/**").permitAll()
+                
+                // Everything else is permitted (including root/health)
+                .anyRequest().permitAll()
             );
 
         return http.build();
@@ -41,16 +53,19 @@ public class SecurityConfig {
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("*"));
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
-        configuration.setAllowedHeaders(Arrays.asList("*"));
-        configuration.setExposedHeaders(Arrays.asList("Authorization"));
-        configuration.setAllowCredentials(false);
-        configuration.setMaxAge(3600L);
+        CorsConfiguration config = new CorsConfiguration();
+
+        // Allow all origins, methods, and headers for testing/Render deployment
+        config.setAllowedOriginPatterns(List.of("*"));
+        config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
+        config.setAllowedHeaders(List.of("*"));
+        config.setExposedHeaders(List.of("Authorization"));
+        config.setAllowCredentials(false);
+        config.setMaxAge(3600L);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
+        source.registerCorsConfiguration("/**", config);
+
         return source;
     }
 }
