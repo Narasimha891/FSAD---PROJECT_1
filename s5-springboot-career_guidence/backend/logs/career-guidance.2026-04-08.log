@@ -1,0 +1,242 @@
+2026-04-08 00:25:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-08 00:25:34 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Starting S5SpringbootCareerGuidenceApplication using Java 25 with PID 10536 (C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\target\classes started by narsi in C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence)
+2026-04-08 00:25:34 [restartedMain] DEBUG c.k.S5SpringbootCareerGuidenceApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-04-08 00:25:34 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-08 00:25:34 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\narsi\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2026-04-08 00:25:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-08 00:25:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-08 00:25:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-08 00:25:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 4 JPA repository interfaces.
+2026-04-08 00:25:37 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-08 00:25:37 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-08 00:25:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-08 00:25:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-08 00:25:37 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2372 ms
+2026-04-08 00:25:37 [restartedMain] DEBUG com.klu.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-04-08 00:25:37 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-08 00:25:37 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-08 00:25:38 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-08 00:25:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-08 00:25:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f9a65eb
+2026-04-08 00:25:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-08 00:25:43 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://fsad.cqfe8m6u0bc4.us-east-1.rds.amazonaws.com:3306/fsad]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.7
+	Default catalog/schema: fsad/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-08 00:25:45 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-08 00:25:48 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08 00:25:48 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-08 00:25:48 [restartedMain] INFO  com.klu.service.FileService - Upload directory initialized at: C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\uploads
+2026-04-08 00:25:50 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-08 00:25:51 [restartedMain] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 38db75c6-11fa-4e36-9280-978f24c24dd4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08 00:25:51 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-08 00:25:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-08 00:25:53 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-08 00:25:53 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Started S5SpringbootCareerGuidenceApplication in 19.161 seconds (process running for 19.812)
+2026-04-08 00:25:53 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-08 00:25:53 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-08 00:26:32 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-08 00:26:32 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-08 00:26:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08 00:26:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-08 00:26:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-08 09:12:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-04-08 09:12:49 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Starting S5SpringbootCareerGuidenceApplication using Java 25 with PID 30636 (C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend\target\classes started by narsi in C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend)
+2026-04-08 09:12:49 [restartedMain] DEBUG c.k.S5SpringbootCareerGuidenceApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-04-08 09:12:49 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-08 09:12:49 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\narsi\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/narsi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2026-04-08 09:12:49 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-08 09:12:49 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-08 09:12:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-08 09:12:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 4 JPA repository interfaces.
+2026-04-08 09:12:54 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 10000 (http)
+2026-04-08 09:12:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10000"]
+2026-04-08 09:12:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-08 09:12:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-08 09:12:54 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5135 ms
+2026-04-08 09:12:54 [restartedMain] DEBUG com.klu.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-04-08 09:12:55 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-08 09:12:55 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-08 09:12:57 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-08 09:12:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-08 09:13:02 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@378df9bf
+2026-04-08 09:13:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-08 09:13:03 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://fsad.cqfe8m6u0bc4.us-east-1.rds.amazonaws.com:3306/fsad]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.7
+	Default catalog/schema: fsad/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-08 09:13:06 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-08 09:13:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08 09:13:08 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-08 09:13:09 [restartedMain] INFO  com.klu.service.FileService - Upload directory initialized at: C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend\uploads
+2026-04-08 09:13:11 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-08 09:13:12 [restartedMain] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4e4a405f-62be-4e54-845b-1a71f7c3b940
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08 09:13:12 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-08 09:13:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10000"]
+2026-04-08 09:13:14 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 10000 (http) with context path '/'
+2026-04-08 09:13:14 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Started S5SpringbootCareerGuidenceApplication in 26.514 seconds (process running for 27.849)
+2026-04-08 09:13:14 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-08 09:13:14 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-08 09:19:19 [http-nio-10000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-08 09:19:19 [http-nio-10000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-08 09:19:19 [http-nio-10000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-08 09:19:19 [http-nio-10000-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/register' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-08 09:19:19 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.register() called with args: [UserRequestDTO(name=Chkl Narasimha, email=narasimhachkl11@gmail.com, password=123456, role=admin)]
+2026-04-08 09:19:21 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.register() returned successfully
+2026-04-08 09:19:21 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.register() executed in 1633 ms
+2026-04-08 09:19:21 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@133c91ec]
+2026-04-08 09:19:22 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
+2026-04-08 09:19:22 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 539 ms
+2026-04-08 09:19:22 [http-nio-10000-exec-9] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:19:22 [http-nio-10000-exec-2] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:19:22 [http-nio-10000-exec-10] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:19:22 [http-nio-10000-exec-1] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:19:22 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ➡ Controller: UserController.getAllUsers() called with args: []
+2026-04-08 09:19:22 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ➡ Controller: ResourceController.getAll() called with args: []
+2026-04-08 09:19:22 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getAll() called with args: []
+2026-04-08 09:19:22 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:19:24 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:19:24 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 1636 ms
+2026-04-08 09:19:24 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.getAll() returned successfully
+2026-04-08 09:19:24 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.getAll() executed in 1638 ms
+2026-04-08 09:19:24 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getAll() returned successfully
+2026-04-08 09:19:24 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getAll() executed in 1675 ms
+2026-04-08 09:19:24 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ✅ Service: ResourceService.getAll() returned successfully
+2026-04-08 09:19:24 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ⏱ ResourceService.getAll() executed in 1763 ms
+2026-04-08 09:19:27 [task-1] INFO  com.klu.service.EmailService - Email sent to: narasimhachkl11@gmail.com with subject: 🎓 Welcome to EduWebinar Platform!
+2026-04-08 09:19:27 [task-1] INFO  com.klu.aop.LoggingAspect - ✅ Service: EmailService.sendWelcomeEmail() returned successfully
+2026-04-08 09:19:27 [task-1] INFO  com.klu.aop.LoggingAspect - ⏱ EmailService.sendWelcomeEmail() executed in 5440 ms
+2026-04-08 09:21:36 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@e66e585]
+2026-04-08 09:21:36 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
+2026-04-08 09:21:36 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 547 ms
+2026-04-08 09:21:36 [http-nio-10000-exec-8] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:21:36 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:21:36 [http-nio-10000-exec-2] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:21:36 [http-nio-10000-exec-10] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:21:36 [http-nio-10000-exec-9] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:21:36 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getAll() called with args: []
+2026-04-08 09:21:36 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ➡ Controller: UserController.getAllUsers() called with args: []
+2026-04-08 09:21:36 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ➡ Controller: ResourceController.getAll() called with args: []
+2026-04-08 09:21:38 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:21:38 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 1617 ms
+2026-04-08 09:21:38 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ✅ Service: ResourceService.getAll() returned successfully
+2026-04-08 09:21:38 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ⏱ ResourceService.getAll() executed in 1694 ms
+2026-04-08 09:21:38 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.getAll() returned successfully
+2026-04-08 09:21:38 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.getAll() executed in 1697 ms
+2026-04-08 09:21:38 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getAll() returned successfully
+2026-04-08 09:21:38 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getAll() executed in 1763 ms
+2026-04-08 09:21:59 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.register() called with args: [UserRequestDTO(name=Chevuru Kumara LakshmiNarasimha, email=2400031953cse1@gmail.com, password=123456, role=user)]
+2026-04-08 09:22:00 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.register() returned successfully
+2026-04-08 09:22:00 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.register() executed in 1335 ms
+2026-04-08 09:22:00 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@1b5659b0]
+2026-04-08 09:22:01 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
+2026-04-08 09:22:01 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 536 ms
+2026-04-08 09:22:01 [http-nio-10000-exec-3] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:22:01 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:22:01 [http-nio-10000-exec-6] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:22:01 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getByUser() called with args: [2]
+2026-04-08 09:22:01 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getByUserId() returned successfully
+2026-04-08 09:22:01 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getByUserId() executed in 512 ms
+2026-04-08 09:22:02 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:22:02 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 1611 ms
+2026-04-08 09:22:05 [task-2] INFO  com.klu.service.EmailService - Email sent to: 2400031953cse1@gmail.com with subject: 🎓 Welcome to EduWebinar Platform!
+2026-04-08 09:22:05 [task-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: EmailService.sendWelcomeEmail() returned successfully
+2026-04-08 09:22:05 [task-2] INFO  com.klu.aop.LoggingAspect - ⏱ EmailService.sendWelcomeEmail() executed in 5069 ms
+2026-04-08 09:22:42 [http-nio-10000-exec-10] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:22:42 [http-nio-10000-exec-9] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:22:42 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:22:42 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getByUser() called with args: [2]
+2026-04-08 09:22:43 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getByUserId() returned successfully
+2026-04-08 09:22:43 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getByUserId() executed in 703 ms
+2026-04-08 09:22:44 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:22:44 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 2138 ms
+2026-04-08 09:24:16 [http-nio-10000-exec-4] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:24:16 [http-nio-10000-exec-5] DEBUG com.klu.config.JwtFilter - Authenticated user: 2400031953cse1@gmail.com with role: user
+2026-04-08 09:24:16 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:24:16 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getByUser() called with args: [2]
+2026-04-08 09:24:17 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getByUserId() returned successfully
+2026-04-08 09:24:17 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getByUserId() executed in 569 ms
+2026-04-08 09:24:18 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:24:18 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 2039 ms
+2026-04-08 09:33:49 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@1b8affe4]
+2026-04-08 09:33:49 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
+2026-04-08 09:33:49 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 618 ms
+2026-04-08 09:33:49 [http-nio-10000-exec-6] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:33:49 [http-nio-10000-exec-5] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:33:49 [http-nio-10000-exec-3] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:33:49 [http-nio-10000-exec-4] DEBUG com.klu.config.JwtFilter - Authenticated user: narasimhachkl11@gmail.com with role: admin
+2026-04-08 09:33:49 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ➡ Controller: UserController.getAllUsers() called with args: []
+2026-04-08 09:33:49 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 09:33:49 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ➡ Controller: ResourceController.getAll() called with args: []
+2026-04-08 09:33:49 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getAll() called with args: []
+2026-04-08 09:33:51 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getAll() returned successfully
+2026-04-08 09:33:51 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getAll() executed in 1669 ms
+2026-04-08 09:33:51 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.getAll() returned successfully
+2026-04-08 09:33:51 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.getAll() executed in 1680 ms
+2026-04-08 09:33:51 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ✅ Service: ResourceService.getAll() returned successfully
+2026-04-08 09:33:51 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ⏱ ResourceService.getAll() executed in 1763 ms
+2026-04-08 09:33:51 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 09:33:51 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 1801 ms
+2026-04-08 09:42:52 [http-nio-10000-exec-8] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 3667 ms
+2026-04-08 09:43:59 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.addWebinar() called with args: [Webinar(id=null, title=Introduction to AI, category=Tech, description=An introductory session on Artificial Intelligence, speaker=Manikanta, date=2026-05-15, imagePath=webinar.jpg, createdAt=null)]
+2026-04-08 09:43:59 [http-nio-10000-exec-4] INFO  com.klu.service.WebinarService - Creating new webinar: Introduction to AI
+2026-04-08 09:44:01 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.add() returned successfully
+2026-04-08 09:44:01 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.add() executed in 1499 ms
+2026-04-08 09:53:24 [http-nio-10000-exec-1] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@6ed14a2a]
+2026-04-08 09:53:25 [http-nio-10000-exec-1] ERROR com.klu.aop.LoggingAspect - ❌ Exception in UserService.login(): Invalid password
+2026-04-08 10:10:13 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.searchByTitle() called with args: [1]
+2026-04-08 10:10:13 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.searchByTitle() returned successfully
+2026-04-08 10:10:13 [http-nio-10000-exec-9] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.searchByTitle() executed in 731 ms
+2026-04-08 10:10:19 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.searchByTitle() called with args: [1]
+2026-04-08 10:10:19 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.searchByTitle() returned successfully
+2026-04-08 10:10:19 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.searchByTitle() executed in 530 ms
+2026-04-08 10:10:47 [http-nio-10000-exec-10] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getById() called with args: [3]
+2026-04-08 10:10:50 [http-nio-10000-exec-10] ERROR com.klu.aop.LoggingAspect - ❌ Exception in WebinarService.getById(): Webinar not found with id: 3
+2026-04-08 10:10:50 [http-nio-10000-exec-10] ERROR com.klu.aop.LoggingAspect - ❌ Exception in WebinarController.getById(): Webinar not found with id: 3
+2026-04-08 10:10:50 [http-nio-10000-exec-10] WARN  c.k.exception.GlobalExceptionHandler - Resource not found: Webinar not found with id: 3
+2026-04-08 10:10:50 [http-nio-10000-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.klu.exception.ResourceNotFoundException: Webinar not found with id: 3]
+2026-04-08 10:11:23 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 10:11:25 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 10:11:25 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 2180 ms
+2026-04-08 10:11:28 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.getAll() called with args: []
+2026-04-08 10:11:30 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.getAll() returned successfully
+2026-04-08 10:11:30 [http-nio-10000-exec-3] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.getAll() executed in 2189 ms
+2026-04-08 10:11:55 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.searchByTitle() called with args: [Manikanta]
+2026-04-08 10:11:56 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.searchByTitle() returned successfully
+2026-04-08 10:11:56 [http-nio-10000-exec-8] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.searchByTitle() executed in 696 ms
+2026-04-08 10:14:04 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ➡ Controller: WebinarController.countByCategory() called with args: [Tech]
+2026-04-08 10:14:04 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ✅ Service: WebinarService.countByCategory() returned successfully
+2026-04-08 10:14:04 [http-nio-10000-exec-5] INFO  com.klu.aop.LoggingAspect - ⏱ WebinarService.countByCategory() executed in 677 ms
+2026-04-08 10:44:15 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.getAll() called with args: []
+2026-04-08 10:44:17 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.getAll() returned successfully
+2026-04-08 10:44:17 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.getAll() executed in 1817 ms
+2026-04-08 10:45:23 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ➡ Controller: RegistrationController.register() called with args: [RegistrationDTO(id=null, userId=2, webinarId=2, registeredAt=null)]
+2026-04-08 10:45:25 [http-nio-10000-exec-7] INFO  com.klu.service.RegistrationService - User 2 registered for webinar 2
+2026-04-08 10:45:25 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ✅ Service: RegistrationService.register() returned successfully
+2026-04-08 10:45:25 [http-nio-10000-exec-7] INFO  com.klu.aop.LoggingAspect - ⏱ RegistrationService.register() executed in 1621 ms

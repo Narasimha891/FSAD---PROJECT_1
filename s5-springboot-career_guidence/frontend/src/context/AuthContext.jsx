@@ -51,13 +51,16 @@ export function AuthProvider({ children }) {
         setRole(r)
         return { user: u, role: r }
     }
-
-    const adminSignup = async (formData) => {
-        const { user: u, role: r } = await svcAdminSignup(formData)
-        setUser(u)
-        setRole(r)
-        return { user: u, role: r }
+    const adminSignup = async (data) => {
+        try {
+            const response = await api.post("/api/auth/register", data)
+            return response.data
+        } catch (error) {
+            throw new Error(error.response?.data?.message || "Signup failed")
+        }
     }
+
+
 
     const logout = () => {
         svcLogout()

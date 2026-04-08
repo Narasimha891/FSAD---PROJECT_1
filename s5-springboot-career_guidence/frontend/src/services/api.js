@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const BASE_URL = "https://fsad-project-1-x1yl.onrender.com";
+const BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:10000'
+    : "https://fsad-project-1-x1yl.onrender.com";
 
 const api = axios.create({
     baseURL: BASE_URL,

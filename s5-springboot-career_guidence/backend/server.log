@@ -1,3 +1,45 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.klu:s5-springboot-career_guidence >----------------
+[INFO] Building s5-springboot-career_guidence 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ s5-springboot-career_guidence >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ s5-springboot-career_guidence ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ s5-springboot-career_guidence ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ s5-springboot-career_guidence ---
+[INFO] skip non existing resourceDirectory C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ s5-springboot-career_guidence ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ s5-springboot-career_guidence <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ s5-springboot-career_guidence ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
 2026-04-09 00:14:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
 2026-04-09 00:14:29 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Starting S5SpringbootCareerGuidenceApplication using Java 25 with PID 8908 (C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend\target\classes started by narsi in C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend)
 2026-04-09 00:14:29 [restartedMain] DEBUG c.k.S5SpringbootCareerGuidenceApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
@@ -34,6 +76,10 @@
 2026-04-09 00:14:47 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2026-04-09 00:14:48 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2026-04-09 00:14:49 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.modelmapper.internal.typetools.TypeResolver (file:/C:/Users/narsi/.m2/repository/org/modelmapper/modelmapper/3.1.1/modelmapper-3.1.1.jar)
+WARNING: Please consider reporting this to the maintainers of class org.modelmapper.internal.typetools.TypeResolver
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
 2026-04-09 00:14:50 [restartedMain] INFO  com.klu.service.FileService - Upload directory initialized at: C:\Users\narsi\Desktop\FSAD PROJECT\career-guidance (2)\s5-springboot-career_guidence\backend\uploads
 2026-04-09 00:14:52 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-04-09 00:14:53 [restartedMain] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
@@ -46,6 +92,11 @@ This generated password is for development use only. Your security configuration
 2026-04-09 00:14:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10000"]
 2026-04-09 00:14:56 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 10000 (http) with context path '/'
 2026-04-09 00:14:56 [restartedMain] INFO  c.k.S5SpringbootCareerGuidenceApplication - Started S5SpringbootCareerGuidenceApplication in 28.819 seconds (process running for 30.824)
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role from user u1_0 where u1_0.email=?
+Admin user already exists: kusadhiharshit@gmail.com
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role from user u1_0 where u1_0.email=?
+Hibernate: insert into user (email,name,password,phone,role) values (?,?,?,?,?)
+Demo student user created: user@demo.com
 2026-04-09 00:14:58 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-04-09 00:14:58 [restartedMain] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
 2026-04-09 00:15:10 [http-nio-10000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -53,24 +104,22 @@ This generated password is for development use only. Your security configuration
 2026-04-09 00:15:10 [http-nio-10000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
 2026-04-09 00:15:10 [http-nio-10000-exec-1] WARN  c.k.exception.GlobalExceptionHandler - JSON parse error: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name
 2026-04-09 00:15:10 [http-nio-10000-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start property name]
-2026-04-09 00:15:29 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.register() called with args: [UserRequestDTO(name=Bot Test, email=bot_test@example.com, password=password123, role=user, phone=1234567890)]
-2026-04-09 00:15:31 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.register() returned successfully
-2026-04-09 00:15:31 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.register() executed in 1934 ms
-2026-04-09 00:15:38 [task-1] INFO  com.klu.service.EmailService - Email sent to: bot_test@example.com with subject: 🎓 Welcome to EduWebinar Platform!
-2026-04-09 00:15:38 [task-1] INFO  com.klu.aop.LoggingAspect - ✅ Service: EmailService.sendWelcomeEmail() returned successfully
-2026-04-09 00:15:38 [task-1] INFO  com.klu.aop.LoggingAspect - ⏱ EmailService.sendWelcomeEmail() executed in 7224 ms
-2026-04-09 00:15:42 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@449fef8c]
+2026-04-09 00:15:29 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - Γ₧í Controller: AuthController.register() called with args: [UserRequestDTO(name=Bot Test, email=bot_test@example.com, password=password123, role=user, phone=1234567890)]
+Hibernate: insert into user (email,name,password,phone,role) values (?,?,?,?,?)
+2026-04-09 00:15:31 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - Γ£à Service: UserService.register() returned successfully
+2026-04-09 00:15:31 [http-nio-10000-exec-2] INFO  com.klu.aop.LoggingAspect - ΓÅ▒ UserService.register() executed in 1934 ms
+2026-04-09 00:15:38 [task-1] INFO  com.klu.service.EmailService - Email sent to: bot_test@example.com with subject: ≡ƒÄô Welcome to EduWebinar Platform!
+2026-04-09 00:15:38 [task-1] INFO  com.klu.aop.LoggingAspect - Γ£à Service: EmailService.sendWelcomeEmail() returned successfully
+2026-04-09 00:15:38 [task-1] INFO  com.klu.aop.LoggingAspect - ΓÅ▒ EmailService.sendWelcomeEmail() executed in 7224 ms
+2026-04-09 00:15:42 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - Γ₧í Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@449fef8c]
 2026-04-09 00:15:42 [http-nio-10000-exec-4] DEBUG com.klu.controller.AuthController - Login attempt for email: bot_test@example.com
-2026-04-09 00:15:43 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
-2026-04-09 00:15:43 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 634 ms
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role from user u1_0 where u1_0.email=?
+2026-04-09 00:15:43 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - Γ£à Service: UserService.login() returned successfully
+2026-04-09 00:15:43 [http-nio-10000-exec-4] INFO  com.klu.aop.LoggingAspect - ΓÅ▒ UserService.login() executed in 634 ms
 2026-04-09 00:15:43 [http-nio-10000-exec-4] INFO  com.klu.controller.AuthController - User bot_test@example.com logged in successfully with role user
-2026-04-09 00:16:10 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ➡ Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@7656fd28]
+2026-04-09 00:16:10 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - Γ₧í Controller: AuthController.login() called with args: [com.klu.dto.LoginDTO@7656fd28]
 2026-04-09 00:16:10 [http-nio-10000-exec-6] DEBUG com.klu.controller.AuthController - Login attempt for email: user@demo.com
-2026-04-09 00:16:11 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ✅ Service: UserService.login() returned successfully
-2026-04-09 00:16:11 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ⏱ UserService.login() executed in 645 ms
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.phone,u1_0.role from user u1_0 where u1_0.email=?
+2026-04-09 00:16:11 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - Γ£à Service: UserService.login() returned successfully
+2026-04-09 00:16:11 [http-nio-10000-exec-6] INFO  com.klu.aop.LoggingAspect - ΓÅ▒ UserService.login() executed in 645 ms
 2026-04-09 00:16:11 [http-nio-10000-exec-6] INFO  com.klu.controller.AuthController - User user@demo.com logged in successfully with role user
-2026-04-09 00:16:18 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-09 00:16:18 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-04-09 00:16:18 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-09 00:16:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-04-09 00:16:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
