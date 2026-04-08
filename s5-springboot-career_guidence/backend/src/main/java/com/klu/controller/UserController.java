@@ -12,7 +12,7 @@ import com.klu.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-
+@CrossOrigin("*")
 public class UserController {
 
     @Autowired

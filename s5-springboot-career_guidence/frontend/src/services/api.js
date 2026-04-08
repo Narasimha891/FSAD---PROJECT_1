@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-const API_BASE_URL = 'http://localhost:10000'
+const BASE_URL = "https://fsad-project-1-x1yl.onrender.com";
 
 const api = axios.create({
-    baseURL: API_BASE_URL,
+    baseURL: BASE_URL,
     headers: {
         'Content-Type': 'application/json',
     },

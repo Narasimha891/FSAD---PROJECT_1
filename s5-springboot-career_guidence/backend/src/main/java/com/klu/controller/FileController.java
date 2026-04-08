@@ -11,7 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/api/files")
-
+@CrossOrigin("*")
 public class FileController {
 
     @Autowired

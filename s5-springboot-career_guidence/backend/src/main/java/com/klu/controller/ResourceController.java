@@ -12,7 +12,7 @@ import com.klu.service.ResourceService;
 
 @RestController
 @RequestMapping("/api/resources")
-
+@CrossOrigin("*")
 public class ResourceController {
 
     @Autowired

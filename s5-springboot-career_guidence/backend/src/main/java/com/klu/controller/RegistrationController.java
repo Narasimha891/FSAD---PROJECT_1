@@ -12,7 +12,7 @@ import com.klu.service.RegistrationService;
 
 @RestController
 @RequestMapping("/api/registrations")
-
+@CrossOrigin("*")
 public class RegistrationController {
 
     @Autowired
