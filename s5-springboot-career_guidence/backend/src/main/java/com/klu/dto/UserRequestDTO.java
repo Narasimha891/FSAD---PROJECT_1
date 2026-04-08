@@ -6,6 +6,7 @@ public class UserRequestDTO {
     private String email;
     private String password;
     private String role;
+    private String phone;
 	public String getName() {
 		return name;
 	}
@@ -29,6 +30,12 @@ public class UserRequestDTO {
 	}
 	public void setRole(String role) {
 		this.role = role;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
     
 }

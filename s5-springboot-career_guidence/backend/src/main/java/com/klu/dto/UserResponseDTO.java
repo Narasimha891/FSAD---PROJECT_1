@@ -7,6 +7,7 @@ public class UserResponseDTO {
     private String name;
     private String email;
     private String role;
+    private String phone;
 	public Long getId() {
 		return id;
 	}
@@ -30,6 +31,12 @@ public class UserResponseDTO {
 	}
 	public void setRole(String role) {
 		this.role = role;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
     
 }
